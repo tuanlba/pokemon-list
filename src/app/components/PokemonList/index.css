@@ -1,0 +1,44 @@
+.pokemon-list-container ul {
+  padding: 0 20px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding-inline-start: 20px;
+}
+
+.pokemon-list-container ul .pokemon-link {
+  text-decoration: none;
+}
+
+.pokemon-filter {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px 20px 20px;
+}
+
+.loading-container {
+  text-align: center;
+}
+
+.loading {
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
